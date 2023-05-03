@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-secton: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.25rem;
+    color:var(--secondary-text-color);
+    line-height:1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.small-bold-text{
+    font-size:1rem;
+    font-weight:700;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-secton);
+    overflow: hidden;
+}
+
+.banner-text{
+    color:white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.top-banner{
+    background-image: url('./asset/asset\ 32.png');
+    background-color: #4fb3d4;
+    background-size:300px;
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.company-logo img{
+    width:200px;
+}
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap:40px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.hover-links{
+    color:var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-links:hover {
+    color:var(--accent-color);
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: white !important;
+    padding:12px 24px;
+    box-shadow: 0 0 2px --secondary-text-color;
+    transition: 0.2s ease-out;
+}  
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight:500;
+    color: var(--primary-text-color) !important;
+    padding:12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color:var(--accent-color) !important;
+}
+
+header{
+    padding: 50px var(--padding-inline-secton) 0;
+}
+
+.header-section{
+    justify-content:center;
+    gap:100px;
+}
+
+.header-right img{
+    width:100%;
+}
+/*
+.header-left{
+    max-width:20vw;
+}
+
+.header-left h1{
+    margin-top:20px;
+}
+*/
+.get-started-button{
+    margin-top: 20px;
+}
+
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+.logo{
+    justify-content: space-evenly;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.logos{
+    height:46px;
+}
+
+.features-header{
+    text-align:center;
+}
+
+.feature-header-text{
+    margin-bottom: 20px;
+}
+
+.features{  
+    padding: 80px var(--padding-inline-secton);
+    background-image: url(./asset/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-area{
+    flex-direction: column;
+    gap:30px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.features-section{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:40px;
+}
+
+.see-all-features-button{
+    margin-bottom: 40px;
+}
+
+.big-features-1img img{
+    width: 550px;
+}
+
+.big-features-text1{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.big-feature-text1-h3{
+    font-size: 1rem;
+    max-width: 300px;
+    font-weight: 700;
+}
+
+.big-feature-text1-h2{
+    font-weight: 600;
+}
+
+.big-features-1{
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.officer-text{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.officer{
+    gap:10px;
+    margin-top: 20px;
+}
+
+.big-features-1{
+    flex-direction: row-reverse;
+}
+
+.big-feature-text1-p2{
+    font-size: 1rem;
+}
+
+.officer-img img{
+    width:50px;
+}
+
+.company{
+    margin-top: 20px;
+}
+
+.company img{
+    width: 100px;
+}
+
+.ChartMogul-text{
+    margin-top: 20px;
+    padding-top: 20px;
+    background-image: url(./asset/asset\ 35.svg);
+    background-repeat: no-repeat;
+    background-position: 30px 30px 30px;
+}
+
+.big-feature-text1-p1{
+    max-width: 400px;
+}
+
+.example-card1{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background-color: black;  
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./asset/asset\ 36.jpeg);
+    background-size:cover; 
+}
+
+.example-card2{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background-color: black;  
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./asset/asset\ 37.jpeg);
+    background-size:cover;
+}
+
+.example-card3{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background-color: black;  
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./asset/asset\ 38.jpeg);
+    background-size:cover;
+}
+
+.example-card4{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background-color: black;  
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./asset/asset\ 39.jpeg);
+    background-size:cover;
+}
+
+.example-area{
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap:wrap;
+}
+
+.example-header{
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    right:20px;
+    color: white !important;
+}
+
+.cta-section-container{
+    flex-direction: column;
+    gap:30px;
+}
+
+.cta-section-container p{
+    margin-top:20px;
+    color:white !important;
+}
+
+.cta-section{
+    margin-top: 30px;
+    background-color:#183b54;
+    padding:120px var(--padding-inline-secton);
+}
+
+.cta-section-container h2{
+    color:white;
+}
+
+.link-coloumn{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.comapny-logo1{
+    width:20px
+}
+
+.link-coloumn h2{
+    font-size: 1.25rem;
+}
+
+.whole-footer{
+    background-color: #D3D3D3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sub-footer{
+    padding-top: 20px;;
+    background-color: #9fbfdf;
+    padding-bottom: 20px;
+}
+
+.part-one{
+    flex-direction:row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.part-two{
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.sub-footer-container{
+    gap: 170px;
+}
+
+.part-one a{
+    font-size: 0.85rem;
+}
+
+.part-two img{
+    width: 15px;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+@media screen and (max-width:991px){
+    .nav-toggle{
+        display:block;
+        margin-right:20px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .example-card1,.example-card2,.example-card3,.example-card4{
+        width:49%;
+        height:180px;
+    }
+
+    .example-area{
+        gap:10px;
+    }
+
+    .cta-section{
+        padding: 40px;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 2.8rem;
+    }
+
+    .big-features-1img img{
+        width: 430px;
+    }
+    .company-logo img{
+        width:160px;
+    }
+    .header-right img{
+        width:500px;
+    }
+
+    p{
+        font-size: 1.10rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header-left{
+        text-align:center;
+    }
+
+    .big-features-1img img{
+        width: 350px;
+    }
+
+    .big-features-1{
+        flex-direction: column;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 2.6rem;
+    }
+
+
+    .link-coloumn a{
+        font-size: 0.75rem;
+    }
+
+    .link-coloumn h2{
+        font-size: 1rem;
+    }
+
+    .part-one>a{
+        font-size: 0.75rem;
+    }
+
+    .example-heading-text{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:479px) {
+    :root{
+        --padding-inline-secton: 10px;
+    }
+    .example-card1,.example-card2,.example-card3,.example-card4{
+        width:110px;
+        height:140px;
+    }
+    h1{
+        font-size:2.2rem;
+    }
+    h3{
+        font-size:0.8rem;
+    }
+}
